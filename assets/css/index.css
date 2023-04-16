@@ -1,0 +1,42 @@
+@import url(./reset.css);
+
+body{
+    font-family: 'Rubik', sans-serif;
+}
+
+.container{
+    max-width: 1680px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+.header_content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.navigation_ul{
+    display: flex;
+}
+
+.navigation_ul li{
+    padding-right: 80px;
+}
+
+.navigation_ul li:last-child{
+    padding-right: 0;
+}
+
+.navigation_ul_li a{
+    font-size: 20px;
+    font-weight: 500;
+    color: #393E46;
+    transition: .3s;
+}
+
+.navigation_ul_li a:hover{
+    color: #b1b1b1;
+}
