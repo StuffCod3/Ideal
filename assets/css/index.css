@@ -40,3 +40,87 @@ body{
 .navigation_ul_li a:hover{
     color: #b1b1b1;
 }
+
+.banner{
+    background-image: url(../img/bg.png);
+    height: 880px;
+}
+
+.banner_content{
+    height: 880px;
+    display: flex;
+    align-items: center;
+}
+
+.banner_content_block{
+    height: auto;
+}
+
+.banner_content_text{
+    height: auto;
+    padding-bottom: 80px;
+}
+
+.banner_content_text h1{
+    color: #222831;
+    font-weight: 700;
+    font-size: 64px;
+    width: 730px;
+}
+
+.banner_content_text p{
+    color: #646464;
+    font-weight: 400;
+    font-size: 20px;
+    width: 570px;
+    padding-top: 33px;
+}
+
+.btn_services{
+    display: inline-block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 74px;
+    padding-right: 74px;
+    border-radius: 60px;
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    background-color: #222831;
+}
+
+.banner_content_services{
+    display: flex;
+    padding-top: 136px;
+}
+
+.banner_service_card{
+    display: flex;
+    width: 270px;
+    height: 120px;
+    background-color: #EEEEEE;
+    border-radius: 20px;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.img_card{
+    width: 60px;
+    height: 60px;
+    margin-left: 30px;
+}
+
+.banner_service_card_text{
+    padding-left: 30px;
+    color: #393E46;
+}
+
+.banner_service_card_text h1{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.banner_service_card_text p{
+    font-size: 16px;
+    font-weight: 500;
+}
