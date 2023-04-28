@@ -108,6 +108,12 @@ body{
     font-size: 24px;
     font-weight: 500;
     background-color: #222831;
+    transition: .3s;
+}
+
+.btn_services:hover{
+    background-color: #fff1f1;
+    color: #222831;
 }
 
 .banner_content_services{
@@ -286,6 +292,11 @@ body{
     background-color: #222831;
     border-radius: 50px;
     color: #FFF;
+    transition: .3s;
+}
+
+.calc_btn:hover{
+    background-color: #4f5b6d;
 }
 
 .price{
@@ -386,6 +397,11 @@ body{
     font-size: 24px;
     color: #FFF;
     border-radius: 50px;
+    transition: .3s;
+}
+
+.feedback_btn:hover{
+    background-color: #4f5b6d;
 }
 
 footer{
@@ -456,6 +472,11 @@ footer{
     color: #ACACAC;
     font-size: 16px;
     font-weight: 300;
+    transition: .3s;
+}
+
+.footer_ul_li a:hover{
+    color: #d6d6d6;
 }
 
 
