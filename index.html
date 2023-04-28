@@ -114,12 +114,78 @@
             <div class="container">
                 <div class="calculate_content">
                     <div class="calculator">
+                        <div class="container_calculator">
+                            <div class="calculator_content">
+                                <h1>Расчет стоимости</h1>
+                                <form action="" >
 
+                                    <div class="type_trucking_block">
+                                        <p>Тип грузоперевозки</p>
+                                        <select class="type_trucking" name="type_trucking">
+                                            <option selected disabled value="select">Выбрать</option>
+                                            <option value="road_type">Дорожные перевозки</option>
+                                            <option value="air_type">Авиа перевозки</option>
+                                            <option value="train_type">Ж/Д перевозки</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="from_where">
+                                        <div class="from_where_select_block">
+                                            <p>Пункт отправления</p>
+                                            <select class="from_where_select" name="from_sending">
+                                                <option selected disabled value="select">Выбрать</option>
+                                                <option value="road_type">Москва</option>
+                                                <option value="air_type">Санкт-Петербург</option>
+                                                <option value="train_type">Владимир</option>
+                                            </select>
+                                        </div>
+                                        <img src="/assets/img/vector.svg" alt="">
+                                        <div class="from_where_select_block">
+                                            <p>Пункт назначения</p>
+                                            <select class="from_where_select" name="from_sending">
+                                                <option selected disabled value="select">Выбрать</option>
+                                                <option value="road_type">Москва</option>
+                                                <option value="air_type">Санкт-Петербург</option>
+                                                <option value="train_type">Владимир</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                     <div class="dimensions">
+                                        <div class="dimension_block">
+                                            <p>Вес, кг</p>
+                                            <input type="text" class="dimension_input">
+                                        </div>
+                                        <div class="dimension_block">
+                                            <p>Длинна, м</p>
+                                            <input type="text" class="dimension_input">
+                                        </div>
+                                        <div class="dimension_block">
+                                            <p>Ширина, м</p>
+                                            <input type="text" class="dimension_input">
+                                        </div>
+                                        <div class="dimension_block">
+                                            <p>Высота, м</p>
+                                            <input type="text" class="dimension_input">
+                                        </div>
+
+                                        <input type="submit" value="Расчитать" class="calc_btn">
+                                     </div>
+
+                                     <div class="price">
+                                        <p>Цена:</p>
+                                        <h1>80000 руб.</h1>
+                                     </div>
+                                </form>
+                            </div>
+                        </div>
                     </div>
                     <img src="/assets/img/person.png" alt="">
                 </div>
             </div>
         </div>
+
+        .
     </main>
 
     <footer></footer>
