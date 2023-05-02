@@ -12,12 +12,17 @@
     <script src="https://api-maps.yandex.ru/2.1/?apikey=&lang=ru_RU"></script>
     <script src="assets/js/map.js"></script>
     <script src="assets/js/scroll.js"></script>
+    <script src="assets/js/animation_dig.js"></script>
+    <script src="assets/js/animation_person.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="icon" href="assets/img/logo.svg">
     <title>Доставка грузов из Москвы | Идеал</title>
+
 </head>
 <body>
     <header class="header">
@@ -121,18 +126,8 @@
                     <div class="calculator">
                         <div class="container_calculator">
                             <div class="calculator_content">
-                                <h1>Расчет стоимости</h1>
+                                <h1>Расчет стоимости авиа перевозки</h1>
                                 <form action="" >
-
-                                    <div class="type_trucking_block">
-                                        <p>Тип грузоперевозки</p>
-                                        <select class="type_trucking" name="type_trucking">
-                                            <option selected disabled value="select">Выбрать</option>
-                                            <option value="road_type">Дорожные перевозки</option>
-                                            <option value="air_type">Авиа перевозки</option>
-                                            <option value="train_type">Ж/Д перевозки</option>
-                                        </select>
-                                    </div>
 
                                     <div class="from_where">
                                         <div class="from_where_select_block">
@@ -185,7 +180,7 @@
                             </div>
                         </div>
                     </div>
-                    <img src="/assets/img/person.png" alt="">
+                    <img class="person" src="/assets/img/person.png" alt="">
                 </div>
             </div>
         </section>

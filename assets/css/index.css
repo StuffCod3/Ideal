@@ -163,6 +163,14 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.dignity_content.active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: transform 0.6s ease, opacity 0.6s ease;
 }
 
 .dignity_text{
@@ -196,7 +204,7 @@ body{
 
 .calculator{
     width: 772px;
-    height: 483px;
+    height: 405px;
     background-color: #FFFFFF;
     border-radius: 20px;
 }
@@ -210,27 +218,6 @@ body{
     font-weight: 700;
     font-size: 36px;
     padding-bottom: 16px;
-}
-
-.type_trucking_block p{
-    color: #646464;
-    font-size: 16px;
-    font-weight: 300;
-    padding-bottom: 7px;
-}
-
-.type_trucking{
-    font-size: 16px;
-    color: #ACACAC;
-    width: 672px;
-    height: 40px;
-    border: 1px solid #ACACAC;
-    border-radius: 10px;
-    padding-left: 16px;
-}
-
-.type_trucking option{
-    color: #393E46;
 }
 
 .from_where{
@@ -317,6 +304,17 @@ body{
     padding: 0;
     font-weight: 700;
     font-size: 24px;
+}
+
+.person{
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.person.active1{
+    opacity: 1;
+    transform: translateY(0);
+    transition: transform 0.6s ease, opacity 0.6s ease;
 }
 
 .feedback{
