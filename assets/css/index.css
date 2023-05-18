@@ -20,6 +20,11 @@ body{
     padding-bottom: 550px;
 }
 
+.map{
+    width: 500px;
+    height: 290px;
+}
+
 .container{
     max-width: 1680px;
     padding: 0 30px;
@@ -210,6 +215,9 @@ body{
     justify-content: space-around;
     opacity: 0;
     transform: translateY(20px);
+    flex-wrap: wrap;
+    gap: 1em;
+    padding: 30px;
 }
 
 .dignity_content.active {
@@ -245,6 +253,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .calculator{
@@ -298,6 +307,8 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: end;
+    flex-wrap: wrap;
+    gap: 0.5em;
 }
 
 .dimension_input{
@@ -360,92 +371,6 @@ body{
     opacity: 1;
     transform: translateY(0);
     transition: transform 0.6s ease, opacity 0.6s ease;
-}
-
-.feedback{
-    height: 679px;
-    background: url(../img/bg_feedback.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.feedback_content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.feedback_text_block{
-    color: #FFF;
-    text-align: center;
-    padding-top: 50px;
-}
-
-.feedback_text_block h1{
-    font-size: 36px;
-    font-weight: 700;
-}
-
-.feedback_text_block p{
-    font-size: 20px;
-    font-weight: 300;
-    padding-top: 12px;
-}
-
-.feedback_div_form{
-    padding-top: 60px;
-    width: 1020px;
-}
-
-.feedback_form{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.feedback_form_inputs{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.feedback_input_contact{
-    width: 300px;
-    height: 80px;
-    border: 1px solid #FFF;
-    border-radius: 20px;
-    padding-left: 28px;
-    color: #ACACAC;
-    margin-bottom: 40px;
-    color: #FFF;
-}
-
-.feedback_input_text{
-    min-width: 1020px;
-    min-height: 200px;
-    resize: none;
-    border: 1px solid #FFF;
-    border-radius: 20px;
-    margin-bottom: 40px;
-    padding: 28px;
-    color: #FFF;
-}
-
-.feedback_btn{
-    width: 300px;
-    height: 80px;
-    background-color: #FD7014;
-    font-weight: 500;
-    font-size: 24px;
-    color: #FFF;
-    border-radius: 50px;
-    transition: .3s;
-}
-
-.feedback_btn:hover{
-    background-color: #4f5b6d;
 }
 
 footer{
@@ -554,4 +479,227 @@ footer{
     .header.open .header_content_navigation{
         transform: translateY(100%);
     }
+
+    .person{
+        display: none;
+    }
 }
+
+@media(max-width: 1050px){
+    .feedback_input_contact{
+        width: 200px;
+    }
+
+    .feedback_input_text{
+        min-width: 400px;
+        min-height: 200px;
+    }
+
+    .feedback_form_inputs{
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 1501px) {
+    .dignitys{
+        height: 300px;
+        background-color: #222831;
+    }
+
+    .dignity_text h1{
+        font-weight: 700;
+        font-size: 24px;
+        color: #FD7014;
+    }
+    
+    .dignity_text p{
+        font-weight: 500;
+        font-size: 14px;
+        color: #FFFFFF;
+        width: 322px;
+        padding-top: 16px;
+    }
+
+    .person{
+        display: none;
+    }
+
+    .calculate_content{
+        justify-content: center;
+    }
+}
+
+@media(max-width: 794px){
+    .price{
+        padding-top: 20px;
+    }
+}
+
+@media(max-width: 779px){
+    .dignitys{
+        height: 500px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .map{
+        width: 250px;
+        height: 200px;
+    }
+
+    .calc_btn{
+        margin-top: 20px;
+    }
+
+    .calculate{
+        height: 1200px;
+    }
+
+    .calculator{
+        width: 500px;
+        height: 405px;
+        background-color: #FFFFFF;
+        border-radius: 20px;
+    }
+
+    .container_calculator{
+        padding: 25px;
+    }
+    
+    .calculator_content h1{
+        font-size: 24px;
+        padding-bottom: 16px;
+    }
+
+    .from_where_select{
+        width: 200px;
+    }
+
+    .dimensions{
+        padding-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+    }
+
+    .banner_content_text{
+        padding-bottom: 30px;
+    }
+
+    .banner_content_text h1{
+        font-size: 32px;
+        width: 250px;
+    }
+
+    .banner_content_text p{
+        font-size: 16px;
+        width: 250px;
+        padding-top: 24px;
+    }
+
+    .btn_services{
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 42px;
+        padding-right: 42px;
+        border-radius: 60px;
+        color: white;
+        font-size: 16px;
+        font-weight: 500;
+        background-color: #222831;
+        transition: .3s;
+    }
+
+    .banner_content_services{
+        padding-top: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2em;
+    }
+
+    .banner_service_card{
+        width: 200px;
+        height: 80px;
+        margin-right: 15px;
+    }
+    
+    .img_card{
+        width: 40px;
+        height: 40px;
+        margin-left: 15px;
+    }
+    
+    .banner_service_card_text{
+        padding-left: 15px;
+        color: #393E46;
+    }
+    
+    .banner_service_card_text h1{
+        font-size: 20px;
+        font-weight: 700;
+    }
+    
+    .banner_service_card_text p{
+        font-size: 12px;
+        font-weight: 500;
+    }
+    
+    footer{
+        height: 800px;
+    }
+
+    .footer_content {
+        height: 800px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 1em;
+    }
+}
+
+@media (max-width: 460px) {
+
+    .from_where{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .from_where img{
+        display: none;
+    }
+
+    .calc_btn{
+        margin-top: 20px;
+    }
+
+    .calculate{
+        height: 1200px;
+    }
+
+    .calculate_content{
+        padding-top: 80px;
+    }
+    .calculator{
+        width: 250px;
+        height: 800px;
+        background-color: #FFFFFF;
+        border-radius: 20px;
+    }
+
+    .container_calculator{
+        padding: 25px;
+    }
+    
+    .calculator_content h1{
+        font-size: 24px;
+        padding-bottom: 16px;
+    }
+
+    .from_where_select{
+        width: 150px;
+    }
+
+}
+

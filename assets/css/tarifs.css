@@ -20,6 +20,11 @@ body{
     padding-bottom: 450px;
 }
 
+.map{
+    width: 500px;
+    height: 290px;
+}
+
 .container{
     max-width: 1680px;
     padding: 0 30px;
@@ -146,12 +151,14 @@ body{
 }
 
 .excels{
-    width: 900px;
+    /* width: 900px; */
     padding-top: 146px;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
     opacity: 0;
     transform: translateY(40px);
+    gap: 2em;
 }
 
 .excels.active{
@@ -308,5 +315,64 @@ footer{
 
     .header.open .header_content_navigation{
         transform: translateY(100%);
+    }
+}
+
+@media (max-width: 768px) {
+
+    .tarifs_content{
+        padding-top: 400px;
+    }
+    .container {
+        padding: 0 20px;
+    }
+
+    .tarifs_text h1 {
+        font-size: 48px;
+    }
+
+    .tarifs_text p {
+        font-size: 20px;
+    }
+
+    .excels {
+        padding-top: 80px;
+    }
+
+    .excel_block {
+        width: 160px;
+        height: 200px;
+    }
+
+    .excel_text h1 {
+        font-size: 20px;
+    }
+
+    .excel_text p {
+        font-size: 14px;
+    }
+
+    .map{
+        width: 250px;
+        height: 200px;
+    }
+
+    
+    footer{
+        height: 800px;
+    }
+
+    .footer_content {
+        height: 800px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 1em;
+    }
+
+    .bg{
+        height: 1800px;
+        object-fit: cover;
     }
 }
