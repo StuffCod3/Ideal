@@ -5,24 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="/assets/css/tarifs.css">
+    <link rel="stylesheet" href="/assets/css/auto.css">
 
     <script src="//code.jivo.ru/widget/f0vKcznqMe" async></script>
+
     <script src="https://api-maps.yandex.ru/2.1/?apikey=&lang=ru_RU"></script>
     <script src="assets/js/map.js"></script>
     <script src="assets/js/scroll.js"></script>
-    <script src="assets/js/animation_tarifs.js"></script>
+    <script src="assets/js/animation_dig.js"></script>
+    <script src="assets/js/animation_person.js"></script>
     <script src="assets/js/burger.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="icon" href="assets/img/logo.svg">
+    <title>Доставка грузов из Москвы | Идеал</title>
 
-    <title>Тарифы грузоперевозок | Идеал</title>
 </head>
 <body>
-
     <div class="bg">
         <header class="header">
             <div class="container">
@@ -50,6 +53,7 @@
                                 </li>
                             </ul>
                         </nav>
+                        
                     </div>
                     <button class="header_burger_btn" id="burger">
                         <span></span><span></span><span></span>
@@ -59,45 +63,44 @@
         </header>
     
         <main>
-            <section class="tarifs">
+            <div class="auto_content">
                 <div class="container">
-                    <div class="tarifs_content">
-                        <div class="tarifs_text">
-                            <h1>Тарифы наших услуг</h1>
-                            <p>Все наши актуальные тарифы вы можете скачать и посмотреть в Excel файлe</p>
+                    <div class="content">
+                        <div class="text">
+                            <h1>Дорожные перевозки</h1>
+                            <h2>Быстрая и надежная доставка вашего груза на нашем транспорте</h2>
+                            <p>
+                                Мы специализируемся на перевозке различных видов грузов, 
+                                включая товары на палетах, контейнеры, сырье, строительные 
+                                материалы и другие грузы различных размеров и весовых категорий. <br><br>
+
+                                Независимо от того, требуется вам междугородняя или международная 
+                                дорожная грузоперевозка, наша компания готова предложить вам высококлассное 
+                                обслуживание и заботу о вашем грузе на протяжении всего процесса доставки. 
+                                С нами вы можете быть уверены в надежности, профессионализме и 
+                                оперативности в каждой дорожной грузоперевозке.
+                            </p>
                         </div>
-
-                        <div class="excels">
-                            <a href="" class="excel_block">
-                                <img src="/assets/img/excel.png" alt="">
-                                <div class="excel_text">
-                                    <h1>Воздушные</h1>
-                                    <p>перевозки</p>
-                                </div>
-                            </a>
-
-                            <a href="" class="excel_block">
-                                <img src="/assets/img/excel.png" alt="">
-                                <div class="excel_text">
-                                    <h1>Дорожные</h1>
-                                    <p>перевозки</p>
-                                </div>
-                            </a>
-
-                            <a href="" class="excel_block">
-                                <img src="/assets/img/excel.png" alt="">
-                                <div class="excel_text">
-                                    <h1>Ж/Д</h1>
-                                    <p>перевозки</p>
-                                </div>
-                            </a>
+                        
+                        <div class="btn">
+                            <a href="/request.html" class="btn_req">Онлайн-заявка</a>
+                        </div>
+                        
+                        <div class="park">
+                            <h1>Автопарк</h1>
+                            <div class="images">
+                                <img src="/assets/img/trk1.png" alt="">
+                                <img src="/assets/img/trk2.png" alt="">
+                                <img src="/assets/img/trk3.png" alt="">
+                            </div>
                         </div>
                     </div>
+                    
                 </div>
-            </section>
+            </div>
         </main>
     </div>
-    
+   
     <footer>
         <div class="container">
             <div class="footer_content">
@@ -107,6 +110,7 @@
 
                         <div class="text_info">
                             <h1>Адрес:</h1>
+                            
                             <p>Московская обл., Аэропорт Домодедово, грузовой терминал</p>
                         </div>
 
@@ -167,3 +171,6 @@
     </footer>
 </body>
 </html>
+
+
+
