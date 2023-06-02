@@ -243,6 +243,24 @@ body{
     padding-bottom: 7px;
 }
 
+.contact{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contact_input{
+    width: 300px;
+    height: 40px;
+    border: 1px solid #ACACAC;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #ACACAC;
+    padding-left: 16px;
+}
+
 .calc_btn{
     margin-top: 48px;
     width: 160px;
@@ -414,4 +432,12 @@ footer{
     .dimensions{
         justify-content: space-around;
     }
+
+    .contact_input{
+        width: 200px;
+    }
+    body{
+    
+    padding-bottom: 750px;
+}
 }
